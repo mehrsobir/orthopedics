@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block title %} Шарикони мо {% endblock %}
+
+{% block body %}
+<section class="parner">
+        <article class="news__title">Шарикони мо</article>
+        <article class="parner__blocks">
+            {% for x in partners %}
+            <div class="parner__block">
+                <img style="background: url(media/{{x.img}})center / cover no-repeat;" class="parner__block-img">
+                <div class="parner__block-text">
+                    <h2 class="parner__block-title">{{x.name}}</h2>
+                    <h3 class="parner__block-h3">{{x.city}}</h3>
+                    <a href="https://www.artemishospitals.com/" target="blank"> <h3 class="parner__block-h3">{{x.country}}</h3></a>
+                </div>
+            </div>
+            {% endfor %}
+        </article>
+</section>
+
+
+
+
+
+{% endblock %}

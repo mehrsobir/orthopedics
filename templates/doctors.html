@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block title %} Табибони мо {% endblock %}
+
+{% block body %}
+<section class="news">
+        <article class="news__title">Табибон</article>
+        <article class="docs__blocks">
+            {% for x in doctors %}
+            <a class="docs__block">
+                <img style="background: url(media/{{x.img}}) center / cover no-repeat;" alt="" class="docs__img">
+                <div class="docs__right">
+                    <h2 class="docs__title">{{x.name}}</h2>
+                    <h3 class="docs__work">
+                        {% for s in x.dw.all %}
+                            {{s.name}},
+                        {% endfor %}
+                    </h3>
+                    <p class="docs__p">{{x.about}}</p>
+                    <h3 class="docs__work">Таҷрибаи корӣ: {{x.yw}}-сол </h3>
+                </div>
+            </a>
+            {% endfor %}
+        </article>
+    </section>
+
+
+
+
+{% endblock %}

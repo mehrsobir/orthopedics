@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block title %} Хабарҳо {% endblock %}
+
+{% block body %}
+<section class="news">
+        <article class="news__title">Хабарҳо</article>
+        <article class="news__new">
+            {% for x in news %}
+                <a href="{% url 'news_detail' x.id %}">
+                    <div class="news__block">
+                        <img style="background: url(media/{{x.img}}) center / cover no-repeat;" alt="" class="news__img">
+                        <div class="news__block-title">{{x.title}}</div>
+                        <div class="news__text">{{x.txt|truncatewords:20}}</div>
+                    </div>
+                </a>
+            {% endfor %}
+        </article>
+        <article class="news__lists">
+            {% for x in news.paginator.page_range %}
+                {% if news.number == x %}
+                    <div class="news__lists-btn" style="background: black;"><a href="?page={{x}}"style="color:white;">{{x}}</a></div>
+                {% else %}
+                    <div class="news__lists-btn"><a href="?page={{x}}">{{x}}</a></div>
+                {% endif %}
+
+            {% endfor %}
+        </article>
+    </section>
+
+
+
+
+
+
+
+{% endblock %}

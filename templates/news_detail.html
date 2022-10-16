@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %} {{x.title}} {% endblock %}
+
+{% block body %}
+<section class="news_detail">
+    <article class="news_detail_center">
+        <img style="background: url(../media/{{x.img}}) center / cover no-repeat" alt="">
+        <h1>{{x.title}}</h1>
+        <p>{{x.txt}}</p>
+    </article>
+</section>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block title %} Хизматрасониҳо {% endblock %}
+
+{% block body %}
+<section class="news">
+        <article class="news__title">Хизматрасониҳо</article>
+        <article class="help__blocks">
+            {% for x in services %}
+            <a class="help__block">
+                <img style="background: url(media/{{x.img}}) center / cover no-repeat" class="help__block-img">
+                <div class="help__block-div">
+                    <h2 class="help__block-title">{{x.name}}</h2>
+                    <ul class="help__block-cot">
+                        <li class="help__block-text">{{x.group}}</li>
+                    </ul>
+                </div>
+            </a>
+            {% endfor %}
+
+        </article>
+
+    </section>
+
+
+
+
+{% endblock %}

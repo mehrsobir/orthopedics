@@ -1,0 +1,219 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    <link rel="icon" href="../media/main/images/orthop.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Montserrat:ital,wght@0,600;1,600&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Асосӣ</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__top">
+            <img src= "media/main/images/orthop.png" alt="" width="200px" height="85px">
+            <div class="header__menu">
+                <li class="header__menulist"><a href="{% url 'news' %}" class="header__bottom">Хабарҳо</a></li>
+                <li class="header__menulist"><a href="{% url 'services' %}" class="header__bottom">Хизматрасониҳо</a></li>
+                <li class="header__menulist"><a href="{% url 'doctors' %}" class="header__bottom">Табибон</a></li>
+                <li class="header__menulist"><a href="{% url 'about' %}" class="header__bottom">Дар бораи мо</a></li>
+                <li class="header__menulist"><a href="{% url 'partners' %}" class="header__bottom">Шарикони мо</a></li>
+                <li class="header__menulist"><a href="{% url 'fotogalereya' %}" class="header__bottom">Фотогалерея</a></li>
+            </div>
+
+        </div>
+
+        <div class="header__div-menu"></div>
+        <div class="header__div-openmenu">
+                <li class="header__menulist"><a href="{% url 'news' %}" class="header__bottom">Хабарҳо</a></li>
+                <li class="header__menulist"><a href="{% url 'services' %}" class="header__bottom">Хизматрасониҳо</a></li>
+                <li class="header__menulist"><a href="{% url 'doctors' %}" class="header__bottom">Табибон</a></li>
+                <li class="header__menulist"><a href="{% url 'about' %}" class="header__bottom">Дар бораи мо</a></li>
+                <li class="header__menulist"><a href="{% url 'partners' %}" class="header__bottom">Шарикони мо</a></li>
+                <li class="header__menulist"><a href="{% url 'fotogalereya' %}" class="header__bottom">Фотогалерея</a></li>
+        </div>
+        <div class="header__center">Маркази тиббии “Ортопедияи муосир”</div>
+        <div class="header__down">
+            <div class="header__contacts">
+                <div class="header__contacts2">
+                    <div class="header__contacts2-info">
+                            <img src="media/main/images/icons8-clock-90.png" class="header__contacts2-info-img" alt="">
+                            <h2 class="header__contacts2-titleh2">24/7</h2>
+                            <h3 class="header__contacts2-titleh3">Дар хизмати шумо ҳастем</h3>
+                    </div>
+                </div>
+                <div class="header__contacts1">
+                    <div class="header__contacts1-top">
+                        <div class="header__contacts1-toptitle">Тамос бо мо</div>
+                        <div class="header__contacts1-toptext">
+                            <li class="header__contacts1-topnam">
+                                <img src="media/main/images/icons8-phone-100.png" alt="" class="header__contacts1-top-img">
+                                <img src="media/main/images/icons8-whatsapp-100.png" alt="" class="header__contacts1-top-img">
+                                <img src="media/main/images/icons8-viber-100.png" alt="" class="header__contacts1-top-img">
+                                <img src="media/main/images/icons8-telegram-100.png" alt="" class="header__contacts1-top-img">
+                            </li>
+                            <li class="header__contacts1-topnam">+992 300-28-88-88</li>
+                            <li class="header__contacts1-topnam">228-88-88</li>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="header__contacts1-top">
+                        <div class="header__contacts1-toptitle">Email: tajorthopedics@gmail.com</div>
+                        <br>
+                        <div class="header__contacts1-toptext">
+                            <!--<li class="header__contacts1-topnam">tajorthopedics@gmail.com</li>-->
+                            <li class="header__contacts1-topnam">
+                                <a href="https://www.facebook.com/tajikmodernorthopedics" target="blank" class="header__contacts1-top-icon"><img src="media/main/images/icons8-facebook-100.png" alt="" class="header__contacts1-top-img" ></a>
+                                <a href="https://www.instagram.com/tajorthopedics2022" target="blank" class="header__contacts1-top-icon"><img src="media/main/images/icons8-instagram-100.png" alt="" class="header__contacts1-top-img" ></a>
+                                <a href="https://www.youtube.com/channel/UCRv2dUnC9_WZ5KOldKzXNQw" target="blank" class="header__contacts1-top-icon"><img src="media/main/images/icons8-youtube-100.png" alt="" class="header__contacts1-top-img" ></a>
+                                <!--<a href="" class="header__contacts1-top-icon"><img src="media/main/images/icons8-twitter-100.png" alt="" class="header__contacts1-top-img" ></a>-->
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header__text">Барои ҳар як давлат солимии аҳли ҷомеа зарур мебошад. Аз ин рӯ, мо бояд халқамонро солим нигоҳ дорем ва барои
+                тандурустии он тамоми шароитро фароҳам оварем. <br> Эмомалӣ Раҳмон </div>
+        </div>
+    </header>
+    <section class="new">
+        <article class="news__title">Хабарҳо</article>
+        <article class="news__center">
+            {% for x in news %}
+                <a href="{% url 'news_detail' x.id %}">
+                    <div class="news__news">
+                        <img src="media/{{x.img}}" alt="" class="news__new-img">
+                        <div class="news__news-title-div"><h2 class="news__news-title">{{x.title}}</h2></div>
+                    </div>
+                </a>
+            {% endfor %}
+        </article>
+        <article class="news__click">
+            <a href="{% url 'news' %}" class="news__click-bot">Бештар -></a>
+        </article>
+    </section>
+    <section class="serv">
+        <article class="news__title">Хизматрасониҳо</article>
+        <article class="news__center">
+            {% for x in services %}
+                <div class="news__news">
+                    <img src="media/{{x.img}}" alt="" class="news__new-img">
+                    <div class="news__news-title-div"><h2 class="news__news-title">{{x.name}}</h2></div>
+                </div>
+            {% endfor %}
+        </article>
+        <article class="news__click">
+            <a href="{% url 'services' %}" class="news__click-bot">Бештар -></a>
+        </article>
+    </section>
+    <section class="docs">
+        <article class="news__title">Табибон</article>
+        <article class="docs__center-art">
+            {% for x in doctors %}
+                <div class="docs__center">
+                    <img style="background: url(media/{{ x.img }}) center / cover no-repeat" alt="" class="docs__center-img">
+                    <h2 class="docs__center-title">{{ x.name }}</h2>
+                    <h3 class="docs__center-text">
+                        {% for d in x.dw.all %}
+                            {{d.name}},
+                        {% endfor %}
+                    </h3>
+                </div>
+            {% endfor %}
+        </article>
+        <article class="news__click">
+            <a href="{% url 'doctors' %}" class="news__click-bot" style="margin-top: 10px;">Бештар -></a>
+        </article>
+    </section>
+    <section class="partner">
+        <article class="news__title">Шарикони мо</article>
+        <article class="partner__center-art">
+            {% for x in partners %}
+                <div class="partner__center">
+                    <img style="background: url(media/{{x.img}}) center / cover no-repeat" alt="" class="partner__center-img">
+                    <h2 class="partner__center-title">{{x.name}}</h2>
+                    <h3 class="partner__center-text">{{x.city}}, <a href="https://www.artemishospitals.com/" target="blank">{{x.country}} </a></h3>
+                </div>
+            {% endfor %}
+        </article>
+        <article class="partner__click">
+            <a href="{% url 'partners' %}" class="partner__click-bot">Бештар -></a>
+        </article>
+    </section>
+    <section class="have">
+        <article class="news__title">Фотогалерея</article>
+        <article class="have__imgs">
+            <div class="have__imgs-div">
+                <img src= "media/main/images/main.jpg" alt="" class="have__img have__img1 wow animate__animated animate__slideInLeft">
+                <img src= "media/main/images/main.jpg" alt="" class="have__img have__img2 wow animate__animated animate__slideInRight">
+                <img src= "media/main/images/main.jpg" alt="" class="have__img have__img2 wow animate__animated animate__slideInLeft">
+                <img src= "media/main/images/main.jpg" alt="" class="have__img have__img1 wow animate__animated animate__slideInRight">
+            </div>
+        </article>
+        <article class="have__click">
+            <a href="" class="have__click-bot">Бештар -></a>
+        </article>
+    </section>
+    <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1061.3287074241211!2d68.80820586549648!3d38.56274050118388!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38b5d1d2ae15817f%3A0x588b03fdcc7a8589!2z0JDQv9GC0LXQutCwINCd0LjRiNC-0L0uIFBoYXJtYWN5!5e0!3m2!1sru!2s!4v1644650350036!5m2!1sru!2s" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+    <footer class="footer">
+        <article class="footer__c">© 2022. Тамоми ҳуқуқҳо маҳфузанд</article>
+        <article class="footer__ligo">
+            <div class="footer__title"><a href="{% url 'home' %}"><img src= "media/main/images/orthop.png" alt="" width="200px" height="85px"></a></div>
+            <div class="footer__name">Маркази тиббии “Ортопедияи муосир”</div>
+        </article>
+        <article class="footer__loc">Нишони мо: <br> Шаҳри Душанбе, кӯчаи Садриддин Айнӣ 46/2 (Гардиши беморхонаи “Ёрии таъҷилӣ”)</article>
+    </footer>
+
+    <script src="{% static 'main/js/main.js' %}"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

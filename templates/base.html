@@ -1,0 +1,50 @@
+
+{% load static %}
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta property="og:title" content="<?php echo $title; ?>" />-->
+    <meta property="og:image" content="../media/{{x.img}}"/>
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+    <link rel="icon" href="../media/main/images/orthop.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Montserrat:ital,wght@0,600;1,600&family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>{% block title %}{% url '' %}{% endblock %}</title>
+</head>
+<body>
+    <header class="header__top">
+        <a href="{% url 'home' %}"><img src= "../media/main/images/orthop.png" alt="" width="200px" height="85px"></a>
+        <div class="header__menu">
+                <li class="header__menulist"><a href="{% url 'news' %}" class="header__bottom">Хабарҳо</a></li>
+                <li class="header__menulist"><a href="{% url 'services' %}" class="header__bottom">Хизматрасониҳо</a></li>
+                <li class="header__menulist"><a href="{% url 'doctors' %}" class="header__bottom">Табибон</a></li>
+                <li class="header__menulist"><a href="{% url 'about' %}" class="header__bottom">Дар бораи мо</a></li>
+                <li class="header__menulist"><a href="{% url 'partners' %}" class="header__bottom">Шарикони мо</a></li>
+                <li class="header__menulist"><a href="{% url 'fotogalereya' %}" class="header__bottom">Фотогалерея</a></li>
+        </div>
+        <div class="header__div-menu"></div>
+        <div class="header__div-openmenu">
+                <li class="header__menulist"><a href="{% url 'news' %}" class="header__bottom">Хабарҳо</a></li>
+                <li class="header__menulist"><a href="{% url 'services' %}" class="header__bottom">Хизматрасониҳо</a></li>
+                <li class="header__menulist"><a href="{% url 'doctors' %}" class="header__bottom">Табибон</a></li>
+                <li class="header__menulist"><a href="{% url 'about' %}" class="header__bottom">Дар бораи мо</a></li>
+                <li class="header__menulist"><a href="{% url 'partners' %}" class="header__bottom">Шарикони мо</a></li>
+                <li class="header__menulist"><a href="{% url 'fotogalereya' %}" class="header__bottom">Фотогалерея</a></li>
+        </div>
+    </header>
+    {% block body %}{% endblock %}
+    <footer class="footer">
+        <article class="footer__c">© 2022. Тамоми ҳуқуқҳо маҳфузанд</article>
+        <article class="footer__ligo">
+            <div class="footer__title"><a href="{% url 'home' %}"><img src= "../media/main/images/orthop.png" alt="" width="200px" height="85px"></a></div>
+            <div class="footer__name">Маркази тиббии “Ортопедияи муосир”</div>
+        </article>
+        <article class="footer__loc">Нишони мо: <br> Шаҳри Душанбе, кӯчаи Садриддин Айнӣ 46/2 (Гардиши беморхонаи “Ёрии таъҷилӣ)”</article>
+    </footer>
+    <script src="{% static 'main/js/main.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+{% extends 'base.html' %}
+{% block title %} Дар бораи мо {% endblock %}
+
+{% block body %}
+<section class="about">
+        <article class="about__title">Дар бораи мо</article>
+        <article class="about__center">
+            {% for x in about %}
+                {% if x.bool == False %}
+                <div class="about__center-div">
+                    <img style="background: url(media/{{x.img}})center / cover no-repeat;" class="about__center-img">
+                    <div class="about__center-left">
+                        <h2 class="about_center-title">{{x.title}}</h2>
+                        <h3 class="about_center-text">{{x.txt}}</h3>
+                    </div>
+                </div>
+                {%else%}
+                <div class="about__center-div left">
+                    <img style="background: url(media/{{x.img}})center / cover no-repeat;" class="about__center-img left_img_shadow">
+                    <div class="about__center-left">
+                        <h2 class="about_center-title rightssss">{{x.title}}</h2>
+                        <h3 class="about_center-text">{{x.txt}}</h3>
+                    </div>
+                </div>
+                {%endif%}
+            {% endfor %}
+        </article>
+    </section>
+
+
+<strong>
+
+</strong>
+
+
+
+{% endblock %}
